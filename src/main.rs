@@ -3,6 +3,9 @@
 use std::collections::{HashMap, HashSet};
 use std::default::Default;
 use std::iter::range;
+use collect::proto::par_vec::ParVec;
+
+extern crate collect;
 
 fn real_cap_of(load_factor: f64, base_cap: usize) -> usize {
     let hm: HashMap<usize, ()> =
